@@ -17,7 +17,7 @@
 </head>
 <body>
     <!-- BOTÃO RETORNO -->
-    <p><</p>
+    <a href="./landing_page.html"><button class="btn_retorno btn btn-success"><</button></a>
 
     <!-- login aside -->
     <main>
@@ -36,7 +36,7 @@
                 <!-- BLOCO SENHA -->
                 <!-- TODO: SENHA TOGGLE BOTÃO -->
                 <div class="bloco-senha">
-                    <input id="userPassword" type="text" placeholder="Senha">
+                    <input id="userPassword" type="password" placeholder="Senha">
                 </div>
     
                 <!-- BLOCO LEMBRAR -->
@@ -45,7 +45,7 @@
                     <label for="userRemember">Lembre-se de mim</label>
                 </div>
     
-                <button type="button" class="btn btn-success rounded-pill me-2">Entrar</button>
+                <button id="sendBtn" type="button" class="btn btn-success rounded-pill me-2">Entrar</button>
             </form>
             <!-- INTERMEDIO -->
             <div class="intermedio"><p>ou</p></div>
@@ -61,8 +61,11 @@
             </div>
         </aside>
     </main>
-    <div class="aside-pic"></div>
+    <div class="aside-pic">
+        <p id="output"></p>
+    </div>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
 </html>
