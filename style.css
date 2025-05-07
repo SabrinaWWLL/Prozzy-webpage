@@ -1,0 +1,256 @@
+/* Body Styling with Background Image */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../assets/imgs/firosnv-photography-1wBmbnvv4TE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* General Navbar Styling */
+nav {
+  margin: 1rem;
+}
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.container-fluid {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Title Bubble (Logo Area) */
+.title-bubble {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Background Dark Row */
+.row.bg-dark {
+  background-color: #212529;
+  color: #fff;
+  margin-left: -2rem;
+  border-radius: 0.5rem;
+}
+
+/* Navigation Items */
+.nav-item {
+  transition: .3s ease-in-out;
+}
+
+.nav-item:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* Hamburger Menu Toggler */
+.navbar-toggler {
+  border: none;
+  padding: 0.25rem 0.75rem;
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* Search Input Styling */
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.form-control {
+  color: #fff;
+  background-color: #343a40;
+  border: 1px solid #495057;
+  padding-right: 40px;
+}
+
+.form-control:focus {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.25);
+}
+
+.form-control::placeholder {
+  color: #adb5bd;
+  opacity: 1;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #adb5bd;
+}
+
+.form-control:-moz-placeholder {
+  color: #adb5bd;
+}
+
+.form-control::-moz-placeholder {
+  color: #adb5bd;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #adb5bd;
+}
+
+.span-inline {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #adb5bd;
+  background: none;
+  padding: 0;
+}
+
+.form-control::-webkit-search-cancel-button {
+  position: relative;
+  right: 25px;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23adb5bd'%3E%3Cpath d='M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z'/%3E%3C/svg%3E") no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+/* Button Spacing */
+.d-flex .btn {
+  margin-left: 0.5rem;
+}
+
+/* Footer Styling */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  background-color: #212529;
+  color: #fff;
+  width: 100%;
+  overflow-y: hidden;
+  flex-shrink: 0;
+}
+
+.footer h5 {
+  color: #fff;
+}
+
+.footer p {
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #adb5bd;
+  text-decoration: underline;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .container-fluid {
+  padding: 1rem;
+}
+
+.footer p:last-child {
+  margin-bottom: 0;
+}
+
+/* Media Queries */
+
+/* Large Screens (992px and up) */
+@media (min-width: 992px) {
+  .navbar-toggler {
+      display: none; /* Hide hamburger on large screens */
+  }
+
+  .navbar-collapse {
+      display: flex !important; /* Keep nav items visible */
+      flex-grow: 0; /* Prevent nav items from taking too much space */
+  }
+
+  .navbar-nav {
+      margin-right: auto; /* Push nav items to the left of buttons */
+  }
+
+  .d-flex {
+      margin-left: auto; /* Push buttons to the right */
+  }
+
+  .container-fluid {
+      flex-direction: row; /* Horizontal layout */
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .title-bubble {
+      margin-bottom: 0; /* Remove extra spacing */
+  }
+}
+
+/* Small Screens (991.98px and below) */
+@media (max-width: 991.98px) {
+  .navbar {
+      border-radius: 1rem !important; /* Square shape when collapsed */
+  }
+
+  .container-fluid {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center horizontally */
+      justify-content: space-between; /* Distribute space */
+      padding: .5rem;
+      height: auto;
+  }
+
+  .title-bubble {
+      margin-bottom: .2rem; /* Space below title */
+  }
+
+  .d-flex {
+      order: 2; /* Buttons and toggler below title */
+      justify-content: center; /* Center buttons and toggler */
+      width: 100%; /* Full width */
+  }
+
+  .navbar-collapse {
+      order: 3; /* Collapsible menu below buttons */
+      background-color: #212529; /* Match navbar background */
+      padding: 1rem;
+      width: 100%; /* Full width for collapsed menu */
+      text-align: center; /* Center menu items */
+  }
+
+  .navbar-nav {
+      margin-top: 0.5rem; /* Space between buttons and menu */
+  }
+
+  .navbar-toggler {
+      display: block; /* Ensure toggler is visible */
+  }
+}
