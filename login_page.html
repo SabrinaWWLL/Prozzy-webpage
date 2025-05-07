@@ -11,29 +11,57 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
     <!-- Link para CSS Nativo -->
-     <link rel="stylesheet" href="./login_page-style.css">
+     <link rel="stylesheet" href="./login_page_style.css">
 
     <title>Prozzy - Log-in</title>
 </head>
-<body class="text-center bg-dark">
-    <form class="form-signin">
-        <i class="bi bi-coin mb-4 text-success fs-1"></i>
-        <h2 class="display-2 text-success">Prozzy</h2>
-        <h1 class="h3 mb-3 font-weight-normal text-white">Faça Seu Log-in</h1>
-        <div class="login-bubble">
-            <label for="inputEmail" class="sr-only text-white">email</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-            <label for="inputPassword" class="sr-only text-white">senha</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        </div>
-        <div class="checkbox mb-3">
-            <label class="text-white">
-            <input type="checkbox" value="remember-me"> Remember me
-            </label>
-        </div>
-        <button class="btn btn-lg btn-outline-success btn-block w-100" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-white">© 2025</p>
-    </form>
+<body>
+    <!-- BOTÃO RETORNO -->
+    <p><</p>
+
+    <!-- login aside -->
+    <main>
+        <aside>
+            <!-- LOGIN -->
+            <h1>Login</h1>
+            <p>Faça seu login para continuar</p>
+    
+            <!-- BLOCO EMAIL -->
+            <form class="login-form">
+                <div class="bloco-email">
+                    <label for="userMail" class="userMailLabel">Email</label>
+                    <input id="userMail" type="text" placeholder="seuemail@gmail.com">
+                </div>
+    
+                <!-- BLOCO SENHA -->
+                <!-- TODO: SENHA TOGGLE BOTÃO -->
+                <div class="bloco-senha">
+                    <input id="userPassword" type="text" placeholder="Senha">
+                </div>
+    
+                <!-- BLOCO LEMBRAR -->
+                <div class="lembre-btn">
+                    <input id="userRemember" type="checkbox">
+                    <label for="userRemember">Lembre-se de mim</label>
+                </div>
+    
+                <button type="button" class="btn btn-success rounded-pill me-2">Entrar</button>
+            </form>
+            <!-- INTERMEDIO -->
+            <div class="intermedio"><p>ou</p></div>
+
+            <!-- BLOCO CONTINUAR COM GOOGLE -->
+            <div class="google-aside">
+                <button type="button" class="btn btn-outline-secondary btn rounded-3"> Continuar com Google
+                    <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google logo"> 
+                </button>
+                <div class="register-link mt-3">
+                    <p>Não é registrado? <a href="/register" class="text-primary">Crie uma conta</a></p>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <div class="aside-pic"></div>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
