@@ -6,6 +6,22 @@ body {
 
 }
 
+/* BTN RETORNO */
+
+.btn_retorno {
+    background-color: #252525;
+    height: 5%;
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+.btn_retorno a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* MAIN */
+
 main {
     background-color: #252525;
     height: 100vh;
@@ -14,6 +30,8 @@ main {
     display: grid;
     place-content: center;
 }
+
+/* ASIDE  */
 
 aside {
     color: #fff;
@@ -29,6 +47,10 @@ aside {
 
 .bloco-email {
     position: relative;
+}
+
+input {
+    color: #fff;
 }
 
 .userMailLabel {
@@ -170,4 +192,124 @@ input[type="checkbox"]:checked {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+
+    display: grid;
+    place-content: center;
+}
+
+
+/* ELEMENT OUTPUT */
+#output {
+    transform: scale(2);
+}
+
+
+/* LOADER */
+/* From Uiverse.io by Pradeepsaranbishnoi */ 
+/* The loader container */
+.loader {
+    width: 200px;
+    height: 200px;
+    perspective: 200px;
+  }
+  
+  
+  /* The dot */
+.dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -60px;
+    border-radius: 100px;
+    border: 40px outset #2e7d32; /* Verde escuro (mesmo do dot1) */
+    transform-origin: 50% 50%;
+    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    background-color: transparent;
+    animation: dot1 1000ms cubic-bezier(.49,.06,.43,.85) infinite;
+}
+
+.dot:nth-child(2) {
+    width: 140px;
+    height: 140px;
+    margin-top: -70px;
+    margin-left: -70px;
+    border-width: 30px;
+    border-color: #388e3c; /* Verde floresta (mesmo do dot2) */
+    animation-name: dot2;
+    animation-delay: 75ms;
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+}
+
+.dot:nth-child(3) {
+    width: 160px;
+    height: 160px;
+    margin-top: -80px;
+    margin-left: -80px;
+    border-width: 20px;
+    border-color: #43a047; /* Verde vibrante (mesmo do dot3) */
+    animation-name: dot3;
+    animation-delay: 150ms;
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+}
+  
+@keyframes dot1 {
+    0% {
+        border-color: #2e7d32; /* Verde escuro */
+        transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    }
+
+    50% {
+        border-color: #4caf50; /* Verde médio */
+        transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0px);
+    }
+
+    100% {
+        border-color: #2e7d32; /* Verde escuro */
+        transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    }
+}
+
+@keyframes dot2 {
+    0% {
+        border-color: #388e3c; /* Verde floresta */
+        box-shadow: inset 0 0 15px 0 rgba(255, 255, 255, 0.2);
+        transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    }
+
+    50% {
+        border-color: #66bb6a; /* Verde claro */
+        box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.8);
+        transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0px);
+    }
+
+    100% {
+        border-color: #388e3c; /* Verde floresta */
+        box-shadow: inset 0 0 15px 0 rgba(255, 255, 255, 0.2);
+        transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    }
+}
+
+@keyframes dot3 {
+    0% {
+        border-color: #43a047; /* Verde vibrante */
+        box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+        transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    }
+
+    50% {
+        border-color: #81c784; /* Verde pastel */
+        box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.8);
+        transform: rotateX(20deg) rotateY(20deg) rotateZ(50deg) translateZ(0px);
+    }
+
+    100% {
+        border-color: #43a047; /* Verde vibrante */
+        box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
+        transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
+    }
 }
