@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Body */
 body {
     display: flex; flex-direction: row;
@@ -6,6 +12,7 @@ body {
 
 }
 
+
 /* BTN RETORNO */
 
 .btn_retorno {
@@ -13,11 +20,15 @@ body {
     height: 5%;
     border-radius: 15px;
     margin: 1rem;
+    
 }
-
 .btn_retorno a {
     text-decoration: none;
     color: #fff;
+}
+
+.btn_retorno_bottom {
+    display: none;
 }
 
 /* MAIN */
@@ -48,6 +59,9 @@ aside {
 .bloco-email {
     position: relative;
 }
+.bloco-senha {
+    position: relative;
+}
 
 input {
     color: #fff;
@@ -65,13 +79,27 @@ input {
     color: green;
 }
 
+
+/* USER MAIL, SENHA + ELEMENTOS OUTPUTS */
 #userMail {
     background: none;
     border: 1px solid gray;
     border-radius: 5px;
     padding: .5rem;
-
+    
     width: 100%;
+}
+
+#outputEmail {
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+    background-color: #252525;
+    padding: .2rem;
+
+    font-size: small;
+    font-weight: light;
+    color: rgba(255, 0, 0, 0.802);
 }
 
 #userPassword {
@@ -79,10 +107,21 @@ input {
     border: 1px solid gray;
     border-radius: 5px;
     padding: .5rem;
-
+    
     width: 100%;
 }
 
+#outputPassword {
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+    background-color: #252525;
+    padding: .2rem;
+
+    font-size: small;
+    font-weight: light;
+    color: rgba(255, 0, 0, 0.802);
+}
 
 /* CHECKBOX LEMBRAR */
 #userRemember {
@@ -184,7 +223,7 @@ input[type="checkbox"]:checked {
 }
 
 
-/* FOTO BG ASIDE LATERAL/ */
+/* FOTO BG ASIDE LATERAL */
 .aside-pic {
     background-image: url("./assets/imgs/Prozzy\ Bg\ login.avif");
     background-size: cover;
@@ -197,13 +236,6 @@ input[type="checkbox"]:checked {
     place-content: center;
 }
 
-
-/* ELEMENT OUTPUT */
-#output {
-    transform: scale(2);
-}
-
-
 /* LOADER */
 /* From Uiverse.io by Pradeepsaranbishnoi */ 
 /* The loader container */
@@ -211,6 +243,7 @@ input[type="checkbox"]:checked {
     width: 200px;
     height: 200px;
     perspective: 200px;
+    transform: scale(3);
   }
   
   
@@ -313,3 +346,56 @@ input[type="checkbox"]:checked {
         transform: rotateX(24deg) rotateY(20deg) rotateZ(0deg) translateZ(-25px);
     }
 }
+
+
+
+/* RESPONSIVE WEBSITE */
+
+@media (max-width: 980px) {
+    body{
+        background-image: url("./assets/imgs/Prozzy\ Bg\ login.avif");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex; flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .aside-pic {
+        background: none;
+        height: 0;
+        width: 0;
+    }
+
+    main {
+        height: 70vh;
+        border-radius: 15px;
+
+    }
+    
+    .btn_retorno {
+        display: none;
+    }
+    
+    .btn_retorno_bottom {
+        display: inline;
+    }
+}
+
+@media (max-width: 600px) {
+    aside {
+       /* width: 100%; */
+       padding: 1rem;
+       /* max-width: 100%; */
+       /* background-color: red; */
+    }
+    main {
+        height: 80vh;
+        width: 100vw;
+    }
+}
+
+
+/* BY VINI R JACOB */

@@ -6,7 +6,9 @@ document.getElementById("sendBtn").addEventListener("click", (event) => {
     const userPassword = document.getElementById("userPassword").value;
     
     // botão formulário + elemento output
-    const output = document.getElementById("output");
+    const outputEmail = document.getElementById("outputEmail");
+    const outputPassword = document.getElementById("outputPassword");
+    const loader = document.getElementById("loader");
     
     // user database
     let userDB = {
@@ -19,23 +21,30 @@ document.getElementById("sendBtn").addEventListener("click", (event) => {
     
     // verificador
     if (userMail === "") {
-        output.innerText = "Digite seu email";
+        outputEmail.innerText = "O campo do e-mail está vazio, preencha-o.";
+        outputPassword.innerText = "O campo da senha está vazio, preencha-o.";
         return;
     }
 
     if (!(userMail in userDB)) {
-        output.innerText = "Usuário não encontrado";
+        outputEmail.innerText = "Usuário não encontrado.";
+        outputPassword.innerText = "";
+        return;
+    }
+
+    if (!(userMail in userDB && userDB[userMail] === userPassword)) {
+        outputEmail.innerText = "Usuário e senha não coincidem.";
+        outputPassword.innerText = "";
         return;
     }
 
     if (userDB[userMail] === userPassword) {
-        output.innerHTML = `
+        loader.innerHTML = `
             <div class="loader">
                 <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
-            </div>`
-        ;
+            </div>`;
 
 
         setTimeout(() => {

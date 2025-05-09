@@ -19,6 +19,14 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
+.container {
+  width: 100%;
+}
+
+.title-box h1 {
+  width: 70%;
+}
+
 .container-fluid {
   width: 95%;
   display: flex;
@@ -68,7 +76,6 @@ nav {
 /* Search Input Styling */
 .input-container {
   position: relative;
-  width: 100%;
 }
 
 .form-control {
@@ -150,9 +157,6 @@ main {
   width: 100%;
   overflow-y: hidden;
   flex-shrink: 0;
-
-  position: fixed;
-  bottom: 0;
 }
 
 .footer h5 {
@@ -256,5 +260,8 @@ main {
 
   .navbar-toggler {
       display: block; /* Ensure toggler is visible */
+  }
+
+  footer {
   }
 }
