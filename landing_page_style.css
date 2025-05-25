@@ -2,7 +2,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-image: url("./assets/imgs/Prozzy\ BG.jpg");
   background-color: #222222;
   background-size: cover;
@@ -152,11 +152,12 @@ main {
 }
 
 .footer {
-  background-color: #212529;
   color: #fff;
   width: 100%;
   overflow-y: hidden;
   flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer h5 {

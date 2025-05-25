@@ -39,6 +39,10 @@ document.getElementById("sendBtn").addEventListener("click", (event) => {
     }
 
     if (userDB[userMail] === userPassword) {
+
+        outputEmail.innerText = "";
+        outputPassword.innerText = "";
+
         loader.innerHTML = `
             <div class="loader">
                 <div class="dot"></div>
