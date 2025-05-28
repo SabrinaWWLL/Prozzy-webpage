@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link para o Bootsrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Link para o CSS do Projeto -->
+     <link rel="stylesheet" href="/Front/Css/landing_page_style.css">
+
+    <title>Prozzy - Página Principal</title>
+</head>
+<body>
+
+    <!-- Começo da Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark rounded-pill rounded-0">
+      <div class="container-fluid">
+          <!-- Title Bubble (top center in mobile) -->
+          <div class="title-bubble">
+              <i class="bi bi-coin text-success"></i>
+              <a class="navbar-brand text-success fs-2" href="#">Prozzy</a>
+          </div>
+          <!-- Collapsible section for nav items -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="#">Contratar Freela</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Encontrar Trabalho
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Trabalho em Design</a></li>
+                          <li><a class="dropdown-item" href="#">Trabalho em Programação</a></li>
+                      </ul>
+                  </li>
+                  </li>
+              </ul>
+          </div>
+          <!-- Buttons and toggler (bottom center in mobile) -->
+          <div class="d-flex align-items-center">
+              <button type="button" class="btn me-2"><a href="/Front/Html/login_page.html" class="text-success text-decoration-none">Entrar</a></button>
+              <button type="button" class="btn btn-success rounded-pill me-2" id="botaoCadastro">Cadastrar-se</button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+      </div>
+  </nav>
+
+    <!-- Começo do Hero -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+        </div>
+        <div class=" title-box col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3 text-success bg-dark rounded-4 p-3">Encontre o melhor profissional para o seu trabalho.</h1>
+
+          <!-- Formulário Hero -->
+          <form class="form-inline" style="position: relative;">
+            <div class="input-container" style="position: relative; width: 100%;">
+              <!-- Campo de busca -->
+              <input class="form-control mr-sm-2 bg-dark w-100" type="search" placeholder="Pesquisar por Trabalho" aria-label="Search">
+              
+              <!-- Ícone de pesquisa no lado direito -->
+              <span class="span-inline btn-secondary">
+                <i class="bi bi-search"></i>
+              </span>
+            </div>
+          </form>
+          
+          <!-- Divisor Hero -->
+          <br>
+          <!-- Butões Hero -->
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 btn-success">Contratar um Freela</button>
+            <button type="button" class="btn btn-secondary btn-lg px-4">Sou um Freela</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Começo da Footer -->
+    <footer class="footer bg-dark text-white">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-4">
+                  <h5>Sobre Nós</h5>
+                  <ul>
+                      <li><a href="#">Venha conhecer a nossa história</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <h5>Encontre Serviços</h5>
+                  <ul>
+                      <li><a href="#">Ache um Freelancer</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <h5>Salve e Publique</h5>
+                  <ul>
+                      <li><a href="#">Publique seu freela e comece a trabalhar</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="text-center py-3">
+              <p>&copy; 2025 Prozzy. Todos os direitos reservados.</p>
+              <p></p>
+          </div>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/Front/Js/landing.js"></script>
+</body>
+
+</html>

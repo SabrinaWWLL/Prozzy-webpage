@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link para o Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link para o Bootsrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <!-- Link para CSS Nativo -->
+    <link rel="stylesheet" href="/Front/Css/login_page_style.css" />
+
+    <title>Prozzy Log-in</title>
+  </head>
+  <body>
+    <!-- BOTÃO RETORNO -->
+    <a href="/Front/Html/landing_page.html"
+      ><button class="btn_retorno btn btn-success">
+        <i class="bi bi-arrow-return-left"></i></button
+    ></a>
+
+    <!-- login aside -->
+    <main>
+      <aside>
+        <!-- LOGIN -->
+        <h1>Login</h1>
+        <p>Faça seu login para continuar</p>
+
+        <!-- BLOCO EMAIL -->
+        <form class="login-form">
+          <div class="bloco-email">
+            <label for="userMail" class="userMailLabel">Email</label>
+            <input id="userMail" type="text" placeholder="email@gmail.com" />
+            <p id="outputEmail"></p>
+          </div>
+
+          <!-- BLOCO SENHA -->
+          <!-- TODO: SENHA TOGGLE BOTÃO -->
+          <div class="bloco-senha">
+            <input id="userPassword" type="password" placeholder="senha" />
+            <p id="outputPassword"></p>
+          </div>
+
+          <!-- BLOCO LEMBRAR -->
+          <div class="lembre-btn">
+            <input id="userRemember" type="checkbox" />
+            <label for="userRemember">Lembre-se de mim</label>
+          </div>
+
+          <!-- TODO: ESQUECEU A SENHA -->
+
+          <input
+            type="submit"
+            id="sendBtn"
+            class="btn btn-success rounded-pill me-2"
+            value="Entrar"
+          />
+        </form>
+        <!-- INTERMEDIO -->
+        <div class="intermedio"><p>ou</p></div>
+
+        <!-- BLOCO CONTINUAR COM GOOGLE -->
+        <div class="google-aside">
+          <button type="button" class="btn btn-outline-secondary btn rounded-3">
+            Continuar com Google
+            <img
+              src="https://img.icons8.com/color/16/000000/google-logo.png"
+              alt="Google logo"
+            />
+          </button>
+          <div class="register-link mt-3">
+            <p>
+              Não é registrado?
+              <a href="/Front/Html/signin_page.html" class="text-primary"
+                >Crie uma conta</a
+              >
+            </p>
+          </div>
+        </div>
+        <a href="/Front/Html/landing_page.html"
+          ><button class="btn_retorno_bottom btn btn-success"><</button></a
+        >
+      </aside>
+    </main>
+    <div class="aside-pic">
+      <p id="loader"></p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Front/Js/login.js"></script>
+  </body>
+</html>
