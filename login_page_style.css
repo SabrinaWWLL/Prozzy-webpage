@@ -76,7 +76,7 @@ input {
 
     font-size: small;
     font-weight: light;
-    color: green;
+    color: #81c784;
 }
 
 
@@ -141,7 +141,7 @@ input[type="checkbox"] {
 }
   
 input[type="checkbox"]:checked {
-    background-color: green; /* Optional: Color when checked */
+    background-color: grey; /* Optional: Color when checked */
 }
 
 .lembre-btn {
@@ -216,6 +216,7 @@ input[type="checkbox"]:checked {
 .register-link a {
     text-decoration: none;
     font-weight: 500;
+
 }
 
 .register-link a:hover {
@@ -399,3 +400,8 @@ input[type="checkbox"]:checked {
 
 
 /* BY VINI R JACOB */
+
+
+.text-primary {
+    color: #81c784 !important;
+}
